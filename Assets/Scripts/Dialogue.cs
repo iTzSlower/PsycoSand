@@ -57,5 +57,5 @@ public class Name_Text
 {
     public string ID;
     public string name;
-    public string text;
+    [TextArea] public string text;
 }
