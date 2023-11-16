@@ -12,7 +12,7 @@ public class blackscreen : MonoBehaviour
 
     enum _screen
     {
-        show, none ,hide
+        show, none, hide
     }
     void Start()
     {
@@ -25,26 +25,24 @@ public class blackscreen : MonoBehaviour
     }
     void Update()
     {
-        
-
         switch (state)
         {
-            case _screen.none :
+            case _screen.none:
                 nothing();
-                break; 
+                break;
 
-            case _screen.show :
+            case _screen.show:
                 Show();
-                break; 
+                break;
 
-            case _screen.hide :
+            case _screen.hide:
                 Hide();
                 break;
         }
     }
     void Show()
     {
-        if(timer > 0)
+        if (timer > 0)
         {
             timer -= Time.deltaTime * 1.1f;
             screen.fillAmount = timer / 1;
