@@ -25,16 +25,23 @@ public class Dialogue : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && Dialogue_ID < text_1.Count -1)
+        if (Input.GetKeyDown(KeyCode.Space) && Dialogue_ID < text_1.Count -1 && text_1[Dialogue_ID].ID != "Pregunta")
         {
             Dialogue_ID += 1;
             Change();
         }
         if (Dialogue_Text.text != text_1[Dialogue_ID].text)
+        {
             Write();
+        }
+
+        if (text_1[Dialogue_ID].ID == "Pregunta")
+        {
+            text_1[Dialogue_ID].preguntas.SetActive(true);
+        }
     }
 
-    void Change()
+    public void Change()
     {
         Dialogue_Name.text = text_1[Dialogue_ID].name;
         Dialogue_Text.text = null;
@@ -58,4 +65,5 @@ public class Name_Text
     public string ID;
     public string name;
     [TextArea] public string text;
+    public GameObject preguntas;
 }
