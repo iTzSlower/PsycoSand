@@ -25,7 +25,7 @@ public class Dialogue : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && Dialogue_ID < text_1.Count -1 && text_1[Dialogue_ID].ID != "Pregunta")
+        if (Input.GetKeyDown(KeyCode.Space) && Dialogue_ID < text_1.Count -1 && text_1[Dialogue_ID].ID != "Pregunta" && text_1[Dialogue_ID].ID != "Muerte")
         {
             Dialogue_ID += 1;
             Change();

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Question : MonoBehaviour
 {
@@ -19,8 +20,12 @@ public class Question : MonoBehaviour
     {
         g.SetActive(false);
     }
-    public void ChangeScene(Transform a)
+    public void ChangeTransform(Transform a)
     {
         Camera.main.transform.position = a.position;
+    }
+    public void ChangeScene(string name)
+    {
+        SceneManager.LoadScene(name);
     }
 }
