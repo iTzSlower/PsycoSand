@@ -1,24 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MousePosition : MonoBehaviour
 {
     [SerializeField] private Camera maincamera;
-    [SerializeField] private LayerMask layerMask;
+    [SerializeField] float Speed = 0.1f;
+
+    NavMeshAgent agent;
+    private void Start()
+    {
+        agent = GetComponent<NavMeshAgent>();
+    }
+
     void Update()
     {
         Ray ray = maincamera.ScreenPointToRay(Input.mousePosition);
-        if(Physics.Raycast(ray, out RaycastHit raycastHit,float.MaxValue,layerMask))
+        if(Physics.Raycast(ray, out RaycastHit raycastHit) && Input.GetKey(KeyCode.Mouse0))
         {
-            transform.position = Vector3.Slerp(transform.position, raycastHit.point, 0.5f);
-            //transform.position = raycastHit.point;
+            agent.SetDestination(raycastHit.point);
         }
-    }
-
-    private void Move()
-    {
-        transform.position = Vector3.Lerp(transform.position, transform.position,Time.deltaTime);
     }
 }
