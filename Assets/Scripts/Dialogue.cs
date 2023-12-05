@@ -9,10 +9,8 @@ public class Dialogue : MonoBehaviour
 {
     [SerializeField] TMP_Text Dialogue_Name;
     [SerializeField] TMP_Text Dialogue_Text;
-
     public int Dialogue_ID;
     [SerializeField] float speedText = 1;
-
     [SerializeField] List<Name_Text> text_1 = new List<Name_Text>();
 
     float timer;
@@ -25,10 +23,19 @@ public class Dialogue : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && Dialogue_ID < text_1.Count -1 && text_1[Dialogue_ID].ID != "Pregunta" && text_1[Dialogue_ID].ID != "Muerte")
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Dialogue_ID += 1;
-            Change();
+            if (Dialogue_Text.text != text_1[Dialogue_ID].text)
+            {
+                Dialogue_Text.text = text_1[Dialogue_ID].text;
+            }
+            else if(Dialogue_ID < text_1.Count - 1 &&
+                text_1[Dialogue_ID].ID != "Pregunta" &&
+                text_1[Dialogue_ID].ID != "Muerte")
+            {
+                Dialogue_ID += 1;
+                Change();
+            }
         }
         if (Dialogue_Text.text != text_1[Dialogue_ID].text)
         {
@@ -37,7 +44,12 @@ public class Dialogue : MonoBehaviour
 
         if (text_1[Dialogue_ID].ID == "Pregunta")
         {
-            text_1[Dialogue_ID].preguntas.SetActive(true);
+            text_1[Dialogue_ID].Activable.showThis = text_1[Dialogue_ID].preguntas;
+            text_1[Dialogue_ID].Activable.Activate();
+        }
+        if (text_1[Dialogue_ID].ID == "Scene")
+        {
+            text_1[Dialogue_ID].Activable.Activate();
         }
     }
 
@@ -66,4 +78,5 @@ public class Name_Text
     public string name;
     [TextArea] public string text;
     public GameObject preguntas;
+    public Interaction Activable;
 }
