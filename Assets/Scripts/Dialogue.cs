@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
@@ -29,28 +30,29 @@ public class Dialogue : MonoBehaviour
             {
                 Dialogue_Text.text = text_1[Dialogue_ID].text;
             }
-            else if(Dialogue_ID < text_1.Count - 1 &&
-                text_1[Dialogue_ID].ID != "Pregunta" &&
-                text_1[Dialogue_ID].ID != "Muerte")
+            else if(Dialogue_ID < text_1.Count - 1)
             {
                 Dialogue_ID += 1;
                 Change();
             }
         }
+
+        if (text_1[Dialogue_ID].ID == "Pregunta")
+        {
+            text_1[Dialogue_ID].preguntas.SetActive(true);
+        }
+        if (text_1[Dialogue_ID].ID == "Scene")
+        {
+            SceneManager.LoadScene(text_1[Dialogue_ID]._ChangeScene);
+        }
+    }
+    private void FixedUpdate()
+    {
         if (Dialogue_Text.text != text_1[Dialogue_ID].text)
         {
             Write();
         }
 
-        if (text_1[Dialogue_ID].ID == "Pregunta")
-        {
-            text_1[Dialogue_ID].Activable.showThis = text_1[Dialogue_ID].preguntas;
-            text_1[Dialogue_ID].Activable.Activate();
-        }
-        if (text_1[Dialogue_ID].ID == "Scene")
-        {
-            text_1[Dialogue_ID].Activable.Activate();
-        }
     }
 
     public void Change()
@@ -78,5 +80,5 @@ public class Name_Text
     public string name;
     [TextArea] public string text;
     public GameObject preguntas;
-    public Interaction Activable;
+    public int _ChangeScene;
 }

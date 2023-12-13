@@ -6,6 +6,75 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Escenas finales ya finales/INICIO-ALREDEDORES-CONFUSION.unity
+    guid: 329cc5d589c643c428d4e8d112c176ce
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/SEGUIR.unity
+    guid: 287709f96495c75409e6b030955daa9b
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/MUERTE01.unity
+    guid: b734b8fe41f2c9b488870c870effb675
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/PELEA01.unity
+    guid: af56a73f2db2e13469ae97853e79d590
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/GANAR-CHARLA01-PREGUNTAS.unity
+    guid: c67e1dce7483c1b489c8d656cc7227b1
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/ALEJARSE.unity
+    guid: e6f4dd020c507dc4e927597d45ff0298
+  - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: 6c7adef099e5fab43bbb5ee49d4b3c6b
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/ARMA-PELEA01.unity
+    guid: 43833e743df876a4b9994d8fef20eeed
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/BAR.unity
+    guid: c5f762dbfe7514e41b7a659e7f2f9fa5
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/CAMINO NORTE.unity
+    guid: 8abe5149ebe0e564f92073f8f83ddb9d
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/CAMINO SUR.unity
+    guid: 0f1c0a3467d4511489c95c157f429a3c
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/CHOZA-MAPA.unity
+    guid: 745266294a8e1cd489e1aa3d479a1b0d
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/ENTRADA DEL PUEBLO NORTE.unity
+    guid: b7501f9216896e6499b3ba23c5062960
+  - enabled: 1
+    path: "Assets/Scenes/Escenas finales ya finales/FOGATA-MA\xD1ANA.unity"
+    guid: c66628d1d3410d64eb0232437c199dd5
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/GRUPO DE GUARDIAS.unity
+    guid: 1950a4af63cf11149a5e0b75224d68ab
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/INFORMACION.unity
+    guid: ddc1ef2973e44124a8694e7bc44d5f63
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/MUERTE02.unity
+    guid: 08a724a12c9939540ab605436c5bb455
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/MUERTE03.unity
+    guid: 827487f99e39cdf45b5721310eba8115
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/MUERTE04.unity
+    guid: 43a78a5e9bf44df43a45956cfe7a68f2
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/PUEBLO NORTE.unity
+    guid: e0884e52e1301c540af6fb4945b6c63d
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/PUEBLO SUR EN GENERAL.unity
+    guid: bf093858f4e47e74891dac7887864add
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/SIGUIENTE PUNTO.unity
+    guid: ae7386691cbf649468a0038cc6d6f685
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/BAR SOLO.unity
+    guid: c78927e5185cf9549a4ea516eeb9e513
+  - enabled: 1
+    path: Assets/Scenes/Escenas finales ya finales/INFORMACION-2.unity
+    guid: eaee20bebca33344ab28a3c50e9ae164
   m_configObjects: {}
