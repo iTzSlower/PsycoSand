@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657993, g: 0.4964165, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657946, g: 0.49641603, b: 0.57481605, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -339,6 +339,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8780147869119528256, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ce3681e496f483479fbd993a674d4a4, type: 2}
     - target: {fileID: -8679921383154817045, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.86634886
@@ -391,6 +395,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -28.076
       objectReference: {fileID: 0}
+    - target: {fileID: -6214551692861467826, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6fd4fba2631d5ac41867f2427e682bba, type: 2}
     - target: {fileID: 919132149155446097, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
       propertyPath: m_Name
       value: Gente del pueblo (14)
@@ -1261,6 +1269,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8780147869119528256, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ce3681e496f483479fbd993a674d4a4, type: 2}
     - target: {fileID: -8679921383154817045, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.86634886
@@ -1313,6 +1325,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.308
       objectReference: {fileID: 0}
+    - target: {fileID: -6214551692861467826, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6fd4fba2631d5ac41867f2427e682bba, type: 2}
     - target: {fileID: 919132149155446097, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
       propertyPath: m_Name
       value: Gente del pueblo (12)
@@ -1330,6 +1346,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8780147869119528256, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ce3681e496f483479fbd993a674d4a4, type: 2}
     - target: {fileID: -8679921383154817045, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.86634886
@@ -1382,10 +1402,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -5.134
       objectReference: {fileID: 0}
+    - target: {fileID: -6214551692861467826, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6fd4fba2631d5ac41867f2427e682bba, type: 2}
+    - target: {fileID: -5147907542206377702, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5aebb5517a6a0b4a9f15c2305194198, type: 2}
     - target: {fileID: 919132149155446097, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
       propertyPath: m_Name
       value: Gente del pueblo (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7692223931535781027, guid: c765606482bd78e47b8b893a0c7a723c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5aebb5517a6a0b4a9f15c2305194198, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1916,10 +1948,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.318
       objectReference: {fileID: 0}
+    - target: {fileID: -8229982293513714002, guid: 4c31e84716c78344d9465a71b79c1c29, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5c0d4c5525d0cc64cb7193675665ee67, type: 2}
     - target: {fileID: 919132149155446097, guid: 4c31e84716c78344d9465a71b79c1c29, type: 3}
       propertyPath: m_Name
       value: Mercader (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5851756792361267752, guid: 4c31e84716c78344d9465a71b79c1c29, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c27ced254b03566499470b2e2d537686, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
