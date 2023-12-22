@@ -30,16 +30,18 @@ public class Dialogue : MonoBehaviour
             {
                 Dialogue_Text.text = text_1[Dialogue_ID].text;
             }
-            else if(Dialogue_ID < text_1.Count - 1)
+            else if(Dialogue_ID < text_1.Count - 1 && text_1[Dialogue_ID].ID != "Pregunta")
             {
                 Dialogue_ID += 1;
                 Change();
             }
         }
-
-        if (text_1[Dialogue_ID].ID == "Pregunta")
+        if (Dialogue_Text.text == text_1[Dialogue_ID].text)
         {
-            text_1[Dialogue_ID].preguntas.SetActive(true);
+            if (text_1[Dialogue_ID].ID == "Pregunta")
+            {
+                text_1[Dialogue_ID].preguntas.SetActive(true);
+            }
         }
         if (text_1[Dialogue_ID].ID == "Scene")
         {
